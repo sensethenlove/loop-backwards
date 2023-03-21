@@ -1,23 +1,25 @@
 {
   "name": "@sensethenlove/loop-backwards",
-  "version": "1.0.0",
+  "version": "1.0.2",
+  "author": "Sense Then Love",
+  "license": "MIT",
+  "types": "./lib/index.d.ts",
+  "homepage": "https://github.com/sensethenlove/loop-backwards#readme",
   "description": "Loop an array backwards, calback provides the current item & a splice function that removes elements from DOM if splice is called on a DOM element and/or removes item from array if item is not a DOM elements",
   "main": "./lib/index.js",
   "scripts": {
-    "build": "pnpm tsc"
+    "build": "pnpm tsc",
+    "npmDeploy": "npm publish --access public"
   },
   "keywords": [
     "array",
-    "utility"
+    "utility",
+    "svelte",
+    "sveltekit",
+    "typescript",
+    "cloudflare",
+    "cloudflare workers"
   ],
-  "author": "Sense Then Love",
-  "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^18.15.3",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.0.2"
-  },
-  "types": "./lib/index.d.ts",
   "directories": {
     "lib": "lib"
   },
@@ -28,5 +30,9 @@
   "bugs": {
     "url": "https://github.com/sensethenlove/loop-backwards/issues"
   },
-  "homepage": "https://github.com/sensethenlove/loop-backwards#readme"
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2"
+  }
 }

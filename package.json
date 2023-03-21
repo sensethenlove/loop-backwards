@@ -1,11 +1,11 @@
 {
   "name": "@sensethenlove/loop-backwards",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "Sense Then Love",
   "license": "MIT",
   "types": "./lib/index.d.ts",
   "homepage": "https://github.com/sensethenlove/loop-backwards#readme",
-  "description": "Loop an array backwards, calback provides the current item & a splice function that removes elements from DOM if splice is called on a DOM element and/or removes item from array if item is not a DOM elements",
+  "description": "Loop an array backwards, calback provides the current item & a splice function that removes elements from DOM if splice is called on a DOM element and/or removes item from array if item is not a DOM element",
   "main": "./lib/index.js",
   "scripts": {
     "build": "pnpm tsc",

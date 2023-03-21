@@ -2,7 +2,7 @@
 
 
 ### 🕉 Description
-Loop an array backwards, calback provides the current item & a splice function that removes elements from DOM if splice is called on a DOM element and/or removes item from array if item is not a DOM elements
+Loop an array backwards, calback provides the current item & a splice function that removes elements from DOM if splice is called on a DOM element and/or removes item from array if item is not a DOM element
 
 
 ### 💞 Install

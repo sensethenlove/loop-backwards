@@ -12,6 +12,8 @@ pnpm add @sensethenlove/loop-backwards
 
 ### ☯️ Example w/ array of numbers
 ```ts
+import loopBackwards from '@sensethenlove/loop-backwards'
+
 loopBackwards(numbers, (number, splice) => {
   if (number !== 9) splice()
 })

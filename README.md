@@ -2,8 +2,7 @@
 
 
 ### 🙏 Description
-Loop an array backwards, calback provides the current item & a splice function that removes elements from DOM if splice is called on a DOM element and/or removes item from array if item is not a DOM element
-
+Loop an array backwards! Give loopBackwards() an array and a callback. On each iteration calback provides the current item, a splice function, and the current index. If the splice function is called the item is removed from the array. If the splice function is called & the current item is a DOM element the item is removed from the array & the item is removed from the DOM
 
 ### ☯️ Install
 ```bash
@@ -14,16 +13,16 @@ pnpm add @sensethenlove/loop-backwards
 ```ts
 import loopBackwards from '@sensethenlove/loop-backwards'
 
-loopBackwards(numbers, (number, splice) => {
-  if (number !== 9) splice()
+loopBackwards(numbers, (number, splice, index) => {
+  if (number === 9 || index === 9) splice()
 })
 ```
 
 
 ### 🧡 Example: Array of objects
 ```ts
-loopBackwards(sources, (source, splice) => {
-  if (source.foo !== 'bar') splice()
+loopBackwards(items, ({ foo }, splice) => {
+  if (foo === 'bar') splice()
 })
 ```
 
@@ -32,7 +31,7 @@ loopBackwards(sources, (source, splice) => {
 const elements = document.querySelectorAll('div')
 
 loopBackwards(Array.from(elements), (element, splice) => {
-  if (element.getAttribute('foo') !== 'bar') splice()
+  if (element.getAttribute('foo') === 'bar') splice()
 })
 ```
 

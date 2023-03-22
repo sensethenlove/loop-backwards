@@ -1,6 +1,6 @@
 {
   "name": "@sensethenlove/loop-backwards",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Sense Then Love",
   "license": "MIT",
   "types": "./lib/index.d.ts",
@@ -9,7 +9,7 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "pnpm tsc",
-    "npmDeploy": "npm publish --access public"
+    "live": "pnpm build && npm publish --access public"
   },
   "keywords": [
     "array",

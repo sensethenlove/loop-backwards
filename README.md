@@ -37,6 +37,7 @@ loopBackwards(Array.from(elements), (element, splice) => {
 
 ### 💖 Our helpful packages!
 * [@sensethenlove/jwt](https://www.npmjs.com/package/@sensethenlove/jwt)
+* [@sensethenlove/slug](https://www.npmjs.com/package/@sensethenlove/slug)
 * [@sensethenlove/toast](https://www.npmjs.com/package/@sensethenlove/toast)
 * [@sensethenlove/env-write](https://www.npmjs.com/package/@sensethenlove/env-write)
 * [@sensethenlove/svelte-modal](https://www.npmjs.com/package/@sensethenlove/svelte-modal)
